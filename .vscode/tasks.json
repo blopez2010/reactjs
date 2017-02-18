@@ -1,0 +1,47 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "0.1.0",
+  "command": "npm",
+  "isShellCommand": true,
+  "showOutput": "always",
+  "suppressTaskName": true,
+  "tasks": [
+    {
+      "taskName": "start",
+      "args": [
+        "start"
+      ]
+    },
+    {
+      "taskName": "webpackdev",
+      "args": [
+        "index.js"
+      ]
+    },
+    {
+      "args": [
+        "${workspaceRoot}\\node_modules\\webpack\\bin\\webpack.js",
+        "--config",
+        "${workspaceRoot}\\webpack.production.config.js",
+        "--progress",
+        "--profile",
+        "--colors"
+      ],
+      "taskName": "webpackdist",
+      "isBuildCommand": true
+    }
+    // {
+    //   "taskName": "install",
+    //   "args": ["install"]
+    // },
+    // {
+    //   "taskName": "update",
+    //   "args": ["update"]
+    // },
+    // {
+    //   "taskName": "test",
+    //   "args": ["run", "test"]
+    // }
+  ]
+}
