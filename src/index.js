@@ -5,6 +5,7 @@ import NestedData from './NestedData';
 import Title from './Title';
 import Events from './Events';
 import Reference from './Reference';
+import Lifecycle from './Lifecycle';
 
 ReactDOM.render(
   <div>
@@ -14,6 +15,7 @@ ReactDOM.render(
     <br/>
     <Events />
     <Reference />
+    <Lifecycle />
   </div>,
   document.getElementById('root')
 );
