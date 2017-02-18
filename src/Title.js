@@ -2,7 +2,13 @@ import React, { Component } from 'react';
 
 class Title extends Component {
   render() {
-    return <TitleComponent text="123456" />
+    return (
+      <div>
+        <span>Title</span>
+        <br />
+        <TitleComponent text="123456" />
+      </div>
+    )
   }
 }
 
@@ -11,7 +17,7 @@ const TitleComponent = (props) => {
 };
 
 TitleComponent.propTypes = {
-  text(props, propName, component){
+  text(props, propName, component) {
     if (!(propName in props)) {
       return new Error(`missing ${propName}`)
     }

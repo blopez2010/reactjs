@@ -9,6 +9,8 @@ class NestedData extends Component {
 const Button = (props) => {
   return (
     <div>
+      <span>Nested Data</span>
+      <br />
       <button>{props.children}</button>
     </div>
   );

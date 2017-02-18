@@ -8,7 +8,7 @@ class Reference extends Component {
       a: ''
     }
   }
-  update(){
+  update() {
     this.setState(
       {
         a: this.a.refs.input.value,
@@ -18,15 +18,17 @@ class Reference extends Component {
   render() {
     return (
       <div>
+        <span>Reference</span>
+        <br />
         <Input
-        ref={ component => this.a = component }
-        update={this.update.bind(this)}
+          ref={component => this.a = component}
+          update={this.update.bind(this)}
         /> {this.state.a}
-        <hr/>
+        <hr />
         <input
-        ref="b"
-        type="text"
-        onChange={this.update.bind(this)}
+          ref="b"
+          type="text"
+          onChange={this.update.bind(this)}
         /> {this.state.b}
       </div>
     );
@@ -35,7 +37,7 @@ class Reference extends Component {
 
 class Input extends Component {
   render() {
-    return <div><input ref="input" type="text" onChange={this.props.update}/></div>
+    return <div><input ref="input" type="text" onChange={this.props.update} /></div>
   }
 }
 

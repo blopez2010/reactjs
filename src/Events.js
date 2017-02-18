@@ -14,6 +14,8 @@ class Events extends Component {
   render() {
     return (
       <div>
+        <span>EVENTS</span>
+        <br/>
         <textarea
         onKeyPress={this.update}
         onCopy={this.update}
