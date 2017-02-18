@@ -15,16 +15,16 @@ class Events extends Component {
     return (
       <div>
         <textarea
-        onKeyPress = {this.update}
+        onKeyPress={this.update}
         onCopy={this.update}
-        onCut = {this.update}
-        onPaste = {this.update}
-        onFocus = {this.update}
-        onBlur = {this.update}
-        onDoubleClick = {this.update}
-        onTouchStart= {this.update}
-        onTouchMove = {this.update}
-        onTouchEnd ={this.update}
+        onCut={this.update}
+        onPaste={this.update}
+        onFocus={this.update}
+        onBlur={this.update}
+        onDoubleClick={this.update}
+        onTouchStart={this.update}
+        onTouchMove={this.update}
+        onTouchEnd={this.update}
         cols="30"
         rows="10" />
         <h1>{ this.state.currentEvent }</h1>

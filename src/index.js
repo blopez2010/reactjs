@@ -4,6 +4,7 @@ import App from './App';
 import NestedData from './NestedData';
 import Title from './Title';
 import Events from './Events';
+import Reference from './Reference';
 
 ReactDOM.render(
   <div>
@@ -12,6 +13,7 @@ ReactDOM.render(
     <NestedData />
     <br/>
     <Events />
+    <Reference />
   </div>,
   document.getElementById('root')
 );
