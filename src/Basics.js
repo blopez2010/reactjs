@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import App from './App';
-import NestedData from './NestedData';
-import Title from './Title';
-import Events from './Events';
-import Reference from './Reference';
-import Lifecycle from './Lifecycle';
-import State from './State';
-import Props from './Props';
+import App from './Basics/App';
+import NestedData from './Basics/NestedData';
+import Title from './Basics/Title';
+import Events from './Basics/Events';
+import Reference from './Basics/Reference';
+import Lifecycle from './Basics/Lifecycle';
+import State from './Basics/State';
+import Props from './Basics/Props';
 
 class Basics extends Component {
   render() {

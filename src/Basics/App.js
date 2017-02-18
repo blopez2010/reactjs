@@ -14,7 +14,6 @@ class App extends Component {
   }
 
   render() {
-    let txt = this.props.txt;
     return <div>
         <h1>{this.state.txt} - {this.state.cat}</h1>
         <Widget update={this.update.bind(this)}></Widget>
@@ -22,7 +21,7 @@ class App extends Component {
   }
 }
 
-const Widget = (props) => <input type="txt" onChange={props.update}/>
+const Widget = (props) => <input type="text" onChange={props.update}/>
 
 App.propTypes = {
   txt: PropTypes.string,
