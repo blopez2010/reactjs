@@ -4,6 +4,7 @@ import Behavior from './Advance/Behavior';
 import Compiler from './Advance/JsxLiveCompiler';
 import Children from './Advance/Children';
 import Extend from './Advance/Extend';
+import Reuse from './Advance/Reuse';
 
 class Advance extends Component {
   render() {
@@ -18,6 +19,8 @@ class Advance extends Component {
         <Children />
         <hr/>
         <Extend />
+        <hr/>
+        <Reuse />
       </div>
     );
   }
